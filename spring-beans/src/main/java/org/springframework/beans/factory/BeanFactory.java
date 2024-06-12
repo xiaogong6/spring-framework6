@@ -116,6 +116,8 @@ import org.springframework.lang.Nullable;
  * @see org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor#postProcessBeforeDestruction
  * @see DisposableBean#destroy
  * @see org.springframework.beans.factory.support.RootBeanDefinition#getDestroyMethodName
+ *
+ * BeanFactory是Spring IoC容器的一个接口，用来获取Bean以及管理Bean的依赖注入和生命周期。
  */
 public interface BeanFactory {
 

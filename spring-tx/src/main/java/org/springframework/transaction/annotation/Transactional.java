@@ -233,6 +233,7 @@ public @interface Transactional {
 	 * @see org.springframework.transaction.interceptor.RollbackRuleAttribute#RollbackRuleAttribute(Class)
 	 * @see org.springframework.transaction.interceptor.DefaultTransactionAttribute#rollbackOn(Throwable)
 	 */
+	// 默认RuntimeException和Error会进行回滚
 	Class<? extends Throwable>[] rollbackFor() default {};
 
 	/**

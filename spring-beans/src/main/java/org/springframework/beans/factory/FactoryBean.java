@@ -61,6 +61,9 @@ import org.springframework.lang.Nullable;
  * @see org.springframework.beans.factory.BeanFactory
  * @see org.springframework.aop.framework.ProxyFactoryBean
  * @see org.springframework.jndi.JndiObjectFactoryBean
+ *
+ * FactoryBean通常用于创建很复杂的对象，比如需要通过某种特定的创建过程才能得到的对象。
+ * 例如，创建与JNDI资源的连接或与代理对象的创建。就如我们的Dubbo中的ReferenceBean。
  */
 public interface FactoryBean<T> {
 
